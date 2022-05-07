@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="signup-container">
+        <div class="signup-sub-container">
+            <div class="sub-inner1">
+                <video src="images/astronot.mp4" laysinline controls muted loop autoplay></video>
+            </div>
+            <div class="sub-inner2">
+                <div class="right-wel">
+                    <h2>Welcome</h2>
+                </div>
+                <div class="right-acc">
+                    <p>Create an account</p>
+                </div>
+                <form action="" name="myform" onsubmit="return mySignupPage();">
+                    <div class="signUp">
+                        <img src="images/User.png" alt="">
+                        <input type="text" name="username" placeholder="user id" id="username">
+                        <p class="formError" id="userError"></p>
+                    </div>
+                    <div class="signUp">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" name="userEmail" placeholder="E-mail" id="email">
+                        <p class="formError star1" id="userEmail"></p>
+                    </div>
+                    <div class="signUp">
+                        <img src="images/Vector lock.png" alt="">
+                        <input type="password" name="password"  placeholder="Password" id=password>
+                        <span class="checkPassword" onclick="passwordFunction()">
+                            <img id="eyeclose1" src="images/Hide.png" alt="">
+                            <i id="eyeopen1" class="fa-solid fa-eye"></i>
+                        </span>
+                        <p class="formError" id="userPasswordError"></p>
+                    </div>
+                    <div class="signUp">
+                        <img src="images/Vector lock.png" alt="">
+                        <input type="password" name="cpassword" placeholder="Confirm Password" id="cpassword">
+                        <span class="checkPassword" onclick="cpasswordFunction()">
+                            <img id="eyeclose2" src="images/Hide.png" alt="">
+                            <i id="eyeopen2" class="fa-solid fa-eye"></i>
+                        </span>
+                    </div>
+                    <div><p class="formError" id="userCpasswordError"></p></div>
+                    <!-- gender check -->
+                    <div class="gender">
+                        <span>
+                            <div><input type="radio" name="gender" id="male"></div>
+                            <div><label for="">Male</label></div>
+                        </span>
+                        <span>
+                            <div><input type="radio" name="gender" id="female"></div>
+                            <div><label for="">Female</label></div>
+                        </span>
+                        <span>
+                            <div><input type="radio" name="gender" id="other"></div>
+                            <div><label for="">Other</label></div>
+                        </span>
+                        <p class="formError" id="genderError"></p>
+                    </div>
+                    <div class="user">
+                        <a href="#">
+                            <p>Already a User?</p>
+                            <span>Login</span>
+                            <img src="images/Vector.png" alt="">
+                        </a>
+                    </div>
+                    <div class="agree">
+                        <span>
+                            <input type="checkbox" id="checkbox1" name="agree">
+                        </span>
+                        <a href="#" >I agree with Terms and Privacy</a>
+                        <p class="formError" id="checkboxError"></p>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">SignUp</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

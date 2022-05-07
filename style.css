@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header
+{
+    width: 100%;
+    height: 110px;
+    background-color: #999;
+}
+.signup-container
+{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aliceblue; */
+    position: relative;
+}
+.signup-sub-container
+{
+    width: 45%;
+    height: 80vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* border: 1px solid black; */
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.sub-inner1, .sub-inner2
+{
+    flex-basis: 50%;
+}
+/* left side astronot page */
+.sub-inner1 video
+{
+    width: 100%;
+    height: 500px;
+    margin: auto;
+}
+audio::-webkit-media-controls-timeline,
+video::-webkit-media-controls-timeline {
+    display: none;
+}
+audio::-webkit-media-controls,
+video::-webkit-media-controls {
+    display: none;
+}
+
+/* right side signup page */
+.sub-inner2
+{
+    width: 100%;
+    height: auto;
+    background-color: #e000b4;
+    border-radius: 30px;
+}
+.sub-inner2:hover
+{
+    background: #ff00cc;
+    transition: 1s;
+    box-shadow:1px 1px 0 1px #f9f9fb,
+    -1px 0 28px 0 rgba(1, 1, 7, 0.01),
+    54px 54px 28px -10px rgba(2, 2, 17, 0.15);
+    transform: translate3d(10px,-12px,10px);
+}
+.right-wel
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.right-wel h2
+{
+    font-size: 36px;
+    margin-top: 10px;
+    color: #ea4f20;
+}
+.right-wel h2:hover
+{
+    transition: transform 150ms;
+    text-shadow: 1px 1px #f9f9f9;
+    font-size: 44px;
+}
+.right-acc
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.right-acc p
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+.right-acc p:hover
+{
+    color: #fff;
+    font-size: 18px;
+}
+.signUp
+{
+    width: 80%;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 10px auto;
+    position: relative;
+}
+.signUp input
+{
+    width: 80%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    padding-left: 5px;
+}
+::placeholder
+{
+    color: #111;
+}
+.signUp img
+{
+    width: 25px;
+    margin-bottom: -3px;
+}
+.signUp span i
+{
+    font-size: 22px;
+}
+.signUp p
+{
+    position: absolute;
+    text-align: right;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+.checkPassword
+{
+    position: absolute;
+    cursor: pointer;
+}
+#eyeopen1
+{
+    display: none;
+}
+#eyeopen2
+{
+    display: none;
+}
+.gender
+{
+    display: flex;
+    justify-items: center;
+    width: 80%;
+    /* justify-content: space-between; */
+    margin: auto;
+    cursor: pointer;
+}
+.gender span
+{
+    display: flex;
+    /* margin: auto 0; */
+}
+.gender span label
+{
+    margin: auto 0;
+    padding-left: 3px;
+    padding-right: 5px;
+}
+.gender p
+{
+    padding-left: 20px;
+    font-size: 30px;
+}
+input[type='radio'] 
+{
+    -webkit-appearance:none;
+    width:20px;
+    cursor: pointer;
+    height:20px;
+    border:1px solid black;
+    border-radius:50%;
+    outline:none;
+    box-shadow:0 0 5px 0px black inset;
+}
+input[type='radio']:before {
+    content:'';
+    display:block;
+    width:60%;
+    height:60%;
+    margin: 20% auto;    
+    border-radius:50%;    
+}
+input[type='radio']:checked:before {
+    background:black;
+}
+.user
+{
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+}
+.user a
+{
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+    font-size: 14px;
+}
+.user a img
+{
+    width: 20px;
+    padding-left: 5px;
+}
+.agree
+{
+    width: 80%;
+    padding-top: 40px;
+    /* border: 1px solid black; */
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.agree p
+{
+    text-align: right;
+    font-size: 30px;
+}
+input[type=checkbox] {
+    transform: scale(1.5);
+  }
+  
+  input[type=checkbox] {
+    width: 12px;
+    height: 16px;
+    /* margin-right: 8px; */
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 14px;
+    visibility: hidden;
+  }
+  
+  input[type=checkbox]:after,
+  input[type=checkbox]::after {
+    content: " ";
+    background-color: transparent;
+    display: inline-block;
+    margin-right: 10px;
+    padding-bottom: 3px;
+    color: #111;
+    width: 14px;
+    height: 14px;
+    visibility: visible;
+    border: 1px solid #000;
+    padding-left: 3px;
+    border-radius: 5px;
+  }
+  
+  input[type=checkbox]:checked:after,
+  input[type=checkbox]:checked::after {
+    content: "\2714";
+    /* padding: -5px; */
+    font-weight: bold;
+  }
+.agree a
+{
+    text-decoration: none;
+    color: #111;
+    margin-left: 10px;
+    font-size: 12px;
+    padding-left: 5px;
+    /* border: 1px solid grey; */
+    width: 350%;
+}
+.btn
+{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.btn button
+{
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15px;
+    background: rgb(27, 238, 73);
+}
+.btn button:hover
+{
+    transition: 1s;
+    background-color: rgb(8, 255, 29);
+    color: #fff;
+    border: none;
+    box-shadow:1px 1px 0 1px #f9f9fb,
+    -1px 0 28px 0 rgba(1, 1, 7, 0.01),
+    54px 54px 28px -10px rgba(2, 2, 17, 0.15);
+    transform: translate3d(10px,5px,5px);
+}
+.formError
+{
+    color: red;
+    margin: auto;
+    /* display: flex; */
+    width: 80%;
+    /* justify-content: center; */
+    font-size: 14px;
+}
+.star1
+{    
+    color: red;
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 40px;
+    font-size: 30px;
+}
